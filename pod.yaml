@@ -7,8 +7,11 @@ metadata:
     app: todo-app
 
 spec:
+  imagePullSecrets:
+    - name: ecr-secret
+
   containers:
-  - name: todo-app
-    image: IMAGE_PLACEHOLDER
-    ports:
-    - containerPort: 80
+    - name: todo-app
+      image: IMAGE_PLACEHOLDER
+      ports:
+        - containerPort: 80
