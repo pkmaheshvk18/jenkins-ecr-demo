@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+
+metadata:
+  name: todo-app-pod
+  labels:
+    app: todo-app
+
+spec:
+  containers:
+  - name: todo-app
+    image: 145305170601.dkr.ecr.ap-southeast-2.amazonaws.com/jenkins-demo:6
+    ports:
+    - containerPort: 80
