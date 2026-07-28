@@ -9,6 +9,6 @@ metadata:
 spec:
   containers:
   - name: todo-app
-    image: 145305170601.dkr.ecr.ap-southeast-2.amazonaws.com/jenkins-demo:6
+    image: IMAGE_PLACEHOLDER
     ports:
     - containerPort: 80
